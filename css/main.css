@@ -405,6 +405,20 @@ html, body {
     margin-top: 0.5em;
 }
 
+  @keyframes color-change {
+    0% { color: var(--header-text); }
+    50% { color: var(--purple); }
+    100% { color: var(--header-text); }
+  }
+  
+  .shake-color {
+    animation: shake 0.5s ease-in-out infinite;
+    animation-name: color-change;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
 /* Footer */
 
 .footer {
