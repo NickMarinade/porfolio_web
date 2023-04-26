@@ -248,34 +248,18 @@ body {
   margin-top: 0.5em;
 }
 
-.header__title em {
-  display: inline-block;
-}
-
-.header__title em:hover {
-  animation: shake 0.4s ease-in-out infinite;
-  cursor: pointer;
-}
-
-@keyframes shake {
-  0% {
-    transform: rotateZ(-5deg);
-  }
-  50% {
-    transform: rotateZ(5deg);
-  }
-  100% {
-    transform: rotateZ(-5deg);
-  }
-}
-
-.header__title {
+.header__wrapper .header__title em  {
     display: inline-block;
   }
   
-  .header__title:hover {
+  .header__wrapper:hover {
     animation: shake 0.4s ease-in-out infinite;
-    cursor: pointer;
+    cursor: default;
+  }
+
+  .header__title em:hover {
+    animation: shake 0.5s ease-in-out infinite;
+    cursor: default;
   }
   
   @keyframes shake {
