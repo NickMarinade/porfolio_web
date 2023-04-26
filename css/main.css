@@ -116,6 +116,28 @@ body {
   font-weight: 700;
 }
 
+.logo:hover {
+    animation: shake-link 0.2s ease-in-out forwards;
+  }
+  
+  @keyframes shake-link {
+    0% {
+      transform: none;
+    }
+    25% {
+      transform: translateX(-2px) translateY(-2px);
+    }
+    50% {
+      transform: translateX(2px) translateY(2px);
+    }
+    75% {
+      transform: translateX(-2px) translateY(2px);
+    }
+    100% {
+      transform: translateX(2px) translateY(-2px);
+    }
+  }
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;
