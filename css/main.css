@@ -117,27 +117,27 @@ body {
 }
 
 .logo:hover {
-    animation: shake-link 0.4s ease-in-out forwards;
-    color: var(--purple);
+  animation: shake-link 0.4s ease-in-out forwards;
+  color: var(--purple);
+}
+
+@keyframes shake-link {
+  0% {
+    transform: none;
   }
-  
-  @keyframes shake-link {
-    0% {
-      transform: none;
-    }
-    25% {
-      transform: translateX(-2px) translateY(-2px);
-    }
-    50% {
-      transform: translateX(2px) translateY(2px);
-    }
-    75% {
-      transform: translateX(-2px) translateY(2px);
-    }
-    100% {
-      transform: translateX(2px) translateY(-2px);
-    }
+  25% {
+    transform: translateX(-2px) translateY(-2px);
   }
+  50% {
+    transform: translateX(2px) translateY(2px);
+  }
+  75% {
+    transform: translateX(-2px) translateY(2px);
+  }
+  100% {
+    transform: translateX(2px) translateY(-2px);
+  }
+}
 
 .nav-list {
   display: flex;
@@ -271,31 +271,31 @@ body {
   margin-top: 0.5em;
 }
 
-.header__wrapper .header__title em  {
-    display: inline-block;
-  }
-  
-  .header__wrapper:hover {
-    animation: shake 0.4s ease-in-out infinite;
-    cursor: default;
-  }
+.header__wrapper .header__title em {
+  display: inline-block;
+}
 
-  .header__title em:hover {
-    animation: shake 0.5s ease-in-out infinite;
-    cursor: default;
+.header__wrapper:hover {
+  animation: shake 0.4s ease-in-out infinite;
+  cursor: default;
+}
+
+.header__title em:hover {
+  animation: shake 0.5s ease-in-out infinite;
+  cursor: default;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(2deg);
   }
-  
-  @keyframes shake {
-    0% {
-      transform: rotateZ(2deg);
-    }
-    50% {
-      transform: rotateZ(-2deg);
-    }
-    100% {
-      transform: rotateZ(2deg);
-    }
+  50% {
+    transform: rotateZ(-2deg);
   }
+  100% {
+    transform: rotateZ(2deg);
+  }
+}
 
 /* Btn */
 
@@ -431,6 +431,7 @@ body {
   transform: scale(1.1);
 }
 
+
 .project-details__cover {
   max-width: 100%;
   margin-bottom: 40px;
@@ -519,6 +520,7 @@ body {
 
 .social__item img:hover {
   transform: scale(1.2);
+  fill: #5c62ec !important;
 }
 
 .copyright {
@@ -527,6 +529,12 @@ body {
 
 .copyright p + p {
   margin-top: 0.5em;
+}
+
+@media (prefers-color-scheme: light) {
+  .github__card__icon {
+    filter: invert(100%);
+  }
 }
 
 @media (max-width: 620px) {
