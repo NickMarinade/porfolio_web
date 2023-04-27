@@ -117,7 +117,8 @@ body {
 }
 
 .logo:hover {
-    animation: shake-link 0.2s ease-in-out forwards;
+    animation: shake-link 0.4s ease-in-out forwards;
+    color: var(--purple);
   }
   
   @keyframes shake-link {
@@ -510,6 +511,14 @@ body {
   display: flex;
   column-gap: 30px;
   align-items: center;
+}
+
+.social__item img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.social__item img:hover {
+  transform: scale(1.2);
 }
 
 .copyright {
