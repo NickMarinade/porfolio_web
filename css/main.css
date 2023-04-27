@@ -367,6 +367,11 @@ body {
   background-color: var(--project-card-bg);
   box-shadow: var(--box-shadow);
   border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.06);
 }
 
 .project__img {
