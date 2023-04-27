@@ -422,6 +422,12 @@ body {
 
 .github__card__icon {
   text-align: end;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.github__card__icon:hover {
+  transform: scale(1.1);
 }
 
 .project-details__cover {
