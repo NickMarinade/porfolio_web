@@ -531,12 +531,6 @@ body {
   margin-top: 0.5em;
 }
 
-@media (prefers-color-scheme: light) {
-  .github__card__icon {
-    filter: invert(100%);
-  }
-}
-
 @media (max-width: 620px) {
   /* Header  */
 
