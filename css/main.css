@@ -256,10 +256,6 @@ body {
   font-weight: 700;
 }
 
-.header__title em {
-  font-style: normal;
-  color: var(--accent);
-}
 
 .header__text {
   margin-bottom: 40px;
@@ -275,26 +271,20 @@ body {
   display: inline-block;
 }
 
-.header__wrapper:hover {
-  animation: shake 0.4s ease-in-out infinite;
+.letter {
+  font-style: normal;
+  font-size: 58px;
+  font-weight: 700;
+  will-change: transform;
   cursor: default;
+  color: var(--accent);
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
-.header__title em:hover {
-  animation: shake 0.5s ease-in-out infinite;
-  cursor: default;
-}
-
-@keyframes shake {
-  0% {
-    transform: rotateZ(2deg);
-  }
-  50% {
-    transform: rotateZ(-2deg);
-  }
-  100% {
-    transform: rotateZ(2deg);
-  }
+/* This is all we need :D */
+.letter:hover {
+  transform: scaleX(0.8) scaleY(1.2);
 }
 
 /* Btn */
